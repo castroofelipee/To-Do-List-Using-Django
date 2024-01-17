@@ -1,0 +1,11 @@
+<!-- todo_app/templates/todo_app/task_list.html -->
+{% extends 'todo_app/base.html' %}
+
+{% block content %}
+  <h2>Task List</h2>
+  <ul>
+    {% for task in tasks %}
+      <li>{{ task.title }} - {% if task.completed %}Completed{% else %}Pending{% endif %}</li>
+    {% endfor %}
+  </ul>
+{% endblock %}

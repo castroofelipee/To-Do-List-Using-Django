@@ -1,0 +1,20 @@
+<!-- base.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}My Website{% endblock %}</title>
+    <!-- Additional common head elements go here -->
+</head>
+<body>
+    <div id="header">
+        <h1>My Website</h1>
+        <!-- Common navigation menu goes here -->
+    </div>
+    <div id="content">
+        {% block content %}{% endblock %}
+    </div>
+    <div id="footer">
+        <!-- Common footer content goes here -->
+    </div>
+</body>
+</html>
